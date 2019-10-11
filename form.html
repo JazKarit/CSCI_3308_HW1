@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+		<div class="container">
+			<h1>Add New Article</h1>
+			<br>
+			<form>
+			  <div class="form-group">
+				<label for="articleTitle"><h4>Article Title</h4></label>
+				<input type="text" class="form-control" id="articleTitle" placeholder="Title">
+			  </div>
+			  <div class="form-group">
+				<label for="author"><h4>Name</h4></label>
+				<input type="text" class="form-control" id="author" placeholder="Name">
+			  </div>
+			  
+			   <div class="row">
+				<div class="col">
+					<div>
+						<label for="fileUpload"><h4>Upload Files:</h4></label><br>
+						<input type="file" id="fileUpload" name="filename">
+					</div>
+				</div>
+				<div class="col dropdown">
+					<label for="pagesDropdown"><h4>Pages</h4></label><br>
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="pagesDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Choose a Page
+					</button>
+					<div class="dropdown-menu" aria-labelledby="pagesDropDown">
+						<a class="dropdown-item" href="#">Academics</a>
+						<a class="dropdown-item" href="#">Hobbies</a>
+						<a class="dropdown-item" href="#">Projects</a>
+					  </div>
+				</div>
+			  </div>
+		  <div class="form-group">
+			<label for="text"><h4>Article Text</h4></label>
+			<textarea type="text" class="form-control" rows="10" id="articleText" placeholder="Title"></textarea>
+		  </div>
+		  <div class="form-check">
+			
+			<p>
+			  <div class="row">
+				  <div class="col">
+				  <label for="tags"><h4>Select Tags</h4></label>
+				  </div>
+				  <div class="col">
+				  <label for="visibilty"><h4>Visibilty</h4></label>
+				  </div>
+			  </div>
+			  <div class="row">
+				<div class="col">
+				  <div class="row" id="tags">
+					<div class="col">
+						<input type="checkbox" class="form-check-input" id="pythonCheck">
+						<label class="form-check-label" for="pythonCheck">Python</label>
+					</div>
+					<div class="col">
+						<input type="checkbox" class="form-check-input" id="cCheck">
+						<label class="form-check-label" for="cCheck">C++</label>
+					</div>
+					<div class="col">
+						<input type="checkbox" class="form-check-input" id="javaCheck">
+						<label class="form-check-label" for="javaCheck">Java</label>
+					</div>
+					<div class="col">
+						<input type="checkbox" class="form-check-input" id="scalaCheck">
+						<label class="form-check-label" for="scalaCheck">Scala</label>
+					</div>
+					<div class="col">
+						<input type="checkbox" class="form-check-input" id="perlCheck">
+						<label class="form-check-label" for="perlCheck">Perl</label>
+					</div>
+				  </div>
+				 </div>
+				 
+				 <div class="col" id ="visibility">
+					<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					  <label class="btn btn-secondary active">
+						<input type="radio" id="public" autocomplete="off" checked> Public
+					  </label>
+					  <label class="btn btn-secondary">
+						<input type="radio"= id="priivate" autocomplete="off"> Private
+					  </label>
+					</div>
+				</div>
+			</p>
+		  </div>
+		<label for="login"><h4>Login to Finish Submitting</h4></label>
+		<div class="row" id="login">
+			<div class="col">
+			  <div class="form-group">
+				<input type="email" class="form-control" id="username" placeholder="Username">
+			  </div>
+			 </div>
+			 <div class="col">
+				 <div class="form-group">
+					<input type="password" class="form-control" id="password" placeholder="Password">
+			</div>
+		  </div>
+		  </div>
+		  <div class="form-check">
+			<input type="checkbox" class="form-check-input" id="rememberMe">
+			<label class="form-check-label" for="exampleCheck1">Remember me</label>
+		  </div>
+		  <br>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		  <br>
+		  <br>
+		</form>
+		</div>
+      </body>
+    </html>
+
+
